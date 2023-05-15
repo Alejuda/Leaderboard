@@ -7,6 +7,60 @@
     <title>Leaderboard</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
+    <header class="header-container">
+      <h1 class="web-title">Leaderboard</h1>
+    </header>
+    <main class="main-section">
+      <section class="board-container">
+        <div class="board-title">
+          <h2 class="subtitle">Recent scores</h2>
+          <button class="button refresh-btn" id="refresh-btn">Refresh</button>
+        </div>
+        <div class="leaderboard" id="leaderboard">
+          <div class="leaderboard-row">
+            <p class="row-description">Your_name: 100</p>
+          </div>
+          <div class="leaderboard-row odd-row">
+            <p class="row-description">Your_name: 110</p>
+          </div>
+          <div class="leaderboard-row">
+            <p class="row-description">Your_name: 70</p>
+          </div>
+          <div class="leaderboard-row odd-row">
+            <p class="row-description">Your_name: 150</p>
+          </div>
+          <div class="leaderboard-row">
+            <p class="row-description">Your_name: 70</p>
+          </div>
+          <div class="leaderboard-row odd-row">
+            <p class="row-description">Your_name: 150</p>
+          </div>
+        </div>
+      </section>
+      <section class="form-container" id="form-container">
+        <h2 class="subtitle">Add your score</h2>
+        <form class="add-form" id="add-form">
+          <input
+            type="text"
+            class="name input-style"
+            id="name"
+            name="name"
+            required
+            placeholder="Your name"
+          />
+          <input
+            type="number"
+            class="score input-style"
+            id="score"
+            name="score"
+            required
+            placeholder="Your score"
+          />
+          <button type="submit" class="button add-btn" id="add-btn">
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
