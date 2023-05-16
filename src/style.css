@@ -65,8 +65,8 @@ body {
 }
 
 .button:hover {
-  background-color: rgba(255,255,255, 0.1);
-  box-shadow: 2px 2px 0 rgba(0,0,0, 0.9);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
 }
 
 .leaderboard {
@@ -78,7 +78,7 @@ body {
 
 .leaderboard-row {
   padding: 5px 10px;
-  background-color: rgba(255,255,255, 0.02);
+  background-color: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(6px);
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .odd-row {
-  background-color: rgba(255,255,255, 0.06);
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .form-container {
@@ -108,7 +108,7 @@ body {
 
 .input-style {
   border: none;
-  background-color: rgba(255,255,255, 0.06);
+  background-color: rgba(255, 255, 255, 0.06);
   padding: 5px 10px;
   border-bottom: 2px solid white;
   border-radius: 4px 4px 0 0;
