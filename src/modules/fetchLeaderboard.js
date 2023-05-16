@@ -1,13 +1,13 @@
 const apiUrl =
   "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Rs6nOVuEsBL48H3aGZaH/scores/";
 
-export async function getScores() {
+export const getScores = async () => {
   const response = await fetch(apiUrl);
   const jsonData = await response.json();
   return jsonData.result;
 }
 
-export async function addScore(user, score) {
+export const addScore = async(user, score) => {
   const newScore = {
     user: user,
     score: score,
