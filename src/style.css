@@ -1,3 +1,9 @@
+:root {
+  --sb-track-color: #ffffff4b;
+  --sb-thumb-color: #102e49;
+  --sb-size: 6px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +80,8 @@ body {
   border-radius: 3px;
   max-height: 50vh;
   overflow-y: auto;
+  scrollbar-color: var(--sb-thumb-color) 
+  var(--sb-track-color);
 }
 
 .leaderboard-row {
@@ -126,4 +134,18 @@ body {
 
 .add-btn {
   align-self: flex-end;
+}
+
+.leaderboard::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.leaderboard::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  /* border-radius: 4px; */
+}
+
+.leaderboard::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 4px;
 }
