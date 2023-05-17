@@ -79,7 +79,6 @@ body {
 .leaderboard-row {
   padding: 5px 10px;
   background-color: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(6px);
 }
 
 .row-description {
