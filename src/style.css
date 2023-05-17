@@ -80,8 +80,9 @@ body {
   border-radius: 3px;
   max-height: 50vh;
   overflow-y: auto;
-  scrollbar-color: var(--sb-thumb-color) 
-  var(--sb-track-color);
+  scrollbar-color:
+    var(--sb-thumb-color)
+    var(--sb-track-color);
 }
 
 .leaderboard-row {
@@ -142,6 +143,7 @@ body {
 
 .leaderboard::-webkit-scrollbar-track {
   background: var(--sb-track-color);
+
   /* border-radius: 4px; */
 }
 
