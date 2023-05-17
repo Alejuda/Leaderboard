@@ -22,8 +22,6 @@ reloadBtn.addEventListener('click', async () => {
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   await addScore(nameToAdd.value, scoreToAdd.valueAsNumber);
-  const newList = await getScores();
-  renderLeaderboard(newList);
   nameToAdd.value = '';
   scoreToAdd.value = '';
 });

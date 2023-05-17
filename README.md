@@ -58,12 +58,6 @@ This project offers a user-friendly interface that allows participants to input 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Comming soon
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -101,10 +95,6 @@ To run the project run this comand:
 ```
 
 your default browser should be opened in this moment.
-
-### Run tests
-
-> Comming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
