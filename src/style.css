@@ -1,0 +1,153 @@
+:root {
+  --sb-track-color: #ffffff4b;
+  --sb-thumb-color: #102e49;
+  --sb-size: 6px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  color: white;
+}
+
+body {
+  background-image: url(./assets/leader-back.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px) brightness(0.7);
+}
+
+.header-container {
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px 40px;
+}
+
+.web-title {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.main-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.board-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.subtitle {
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 3px 13px;
+  font-weight: 600;
+  transition: all 100ms;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
+}
+
+.leaderboard {
+  border: 1px solid white;
+  border-radius: 3px;
+  max-height: 50vh;
+  overflow-y: auto;
+  scrollbar-color:
+    var(--sb-thumb-color)
+    var(--sb-track-color);
+}
+
+.leaderboard-row {
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.row-description {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.odd-row {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.input-style {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 5px 10px;
+  border-bottom: 2px solid white;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.2s;
+}
+
+.input-style::placeholder {
+  color: white;
+  font-weight: 600;
+}
+
+.input-style:focus {
+  border-bottom: 2px solid rgb(219, 208, 44);
+  outline: none;
+}
+
+.add-btn {
+  align-self: flex-end;
+}
+
+.leaderboard::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.leaderboard::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+
+  /* border-radius: 4px; */
+}
+
+.leaderboard::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 4px;
+}
